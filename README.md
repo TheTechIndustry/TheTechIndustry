@@ -1,9 +1,5 @@
 # Tech Industry — Official Web Platform
 
-The official open-source repository and static web platform for **Tech Industry** ([techindustry.tech](https://techindustry.tech/)).
-
----
-
 ## Overview
 
 **Tech Industry** is an engineering organization focused on building modern open-source tools, cross-platform desktop applications, and high-performance web systems.
