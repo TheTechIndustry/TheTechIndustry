@@ -624,3 +624,68 @@ body {
     text-align: center;
   }
 }
+
+.faq-list {
+  max-width: 780px;
+  margin: 0 auto;
+  border-top: 1px solid var(--color-hairline);
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--color-hairline);
+}
+
+.faq-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--color-primary);
+  font-size: 17px;
+  font-weight: 500;
+  font-family: var(--font-sans);
+  text-align: left;
+  cursor: pointer;
+  letter-spacing: -0.01em;
+  transition: color 0.15s ease, opacity 0.15s ease;
+}
+
+.faq-trigger:hover {
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+.faq-icon {
+  width: 20px;
+  height: 20px;
+  color: var(--color-tertiary);
+  transition: transform 0.25s var(--ease-out), color 0.15s ease;
+  flex-shrink: 0;
+  margin-left: 16px;
+}
+
+.faq-item.active .faq-trigger {
+  color: #ffffff;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(45deg);
+  color: #ffffff;
+}
+
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  color: var(--color-secondary);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.faq-inner {
+  padding-bottom: 24px;
+}
